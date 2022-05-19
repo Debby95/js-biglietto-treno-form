@@ -12,38 +12,69 @@
     
     <div class="container bg-danger text-white text-center px-5">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="container bg-white">
-            <div class="text-danger d-flex justify-content-around pt-3">
-                <span>Nome Cognome</span>
-                <span>Km da percorrere</span>
-                <span>Fascia d'età</span>
-            </div>
+        <div class="container bg-white pb-5">
+            <div class="row">
+                <div class="col">
+                    <div class="text-danger pt-3 pb-3">Nome Cognome</div>
+                    <input class="text-dark" type="text" placeholder="Nome" name="userName">
+                </div>
 
-            <div class="d-flex justify-content-around pt-3">
-                <input type="text" name="userName">
-                <input type="text" name="kmDaPercorrere">
-                <input type="text" name="etaUtente">
-            </div>
+                <div class="col">
+                    <div class="text-danger pt-3 pb-3">Km da percorrere</div>
+                    <input type="text" placeholder="Km da percorrere" name="kmDaPercorrere">
+                </div>
 
-            <div class="pt-5 pb-3">
-                <button type="button">Genera</button>
-                <button type="button">Annulla</button>
+                <div class="col">
+                    <div class="text-danger pt-3 pb-3">Fascia d'età</div>
+                    <input type="text" placeholder="età" name="etaUtente">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 d-flex justify-content-end">
+                    <button class="mt-3" type="button">Genera</button>
+                </div>
+
+                <div class="col-6 d-flex">
+                    <button class="mt-3" type="button">Annulla</button>
+                </div>
             </div>
             
         </div>
     </div>
 
+    <!-- biglietto treno -->
     <div class="container bg-danger pb-5 px-5">
-        <h1 class="text-white text-center pt-3">IL TUO BIGLIETTO</h1>
+        <h1 class="text-center text-white">IL TUO BIGLIETTO</h1>
         <div class="container bg-white text-dark pb-5 pt-3 fw-bold">
-            <div>DETTAGLIO PASSEGGERI</div>
-            <div class="bg-secondary w-25">
-                <hr>
-                <div class="pb-5">
-                    <div>NOME PASSEGGERO</div>
-                    <div>Jon Snow</div>
+            <h5>DETTAGLIO</h5>
+            <div class="row">
+                <div class="col">
+                    <div class="bg-secondary">
+                        <div class="pb-5">
+                            <div>NOME PASSEGGERO</div>
+                            <div>Jon Snow</div>
+                        </div>
+                    </div>
                 </div>
-                <hr>
+                <div class="col">
+                    <div>Offerta</div>
+                    <div class="fw-light">Biglietto Standard</div>
+                </div>
+
+                <div class="col">
+                    <div>Carrozza</div>
+                    <div class="fw-light">5</div>
+                </div>
+
+                <div class="col">
+                    <div>Codice CP</div>
+                    <div class="fw-light">92911</div>
+                </div>
+
+                <div class="col">
+                    <div>Costo biglietto</div>
+                    <div id="ticketPrice"></div>
+                </div>
             </div>
         </div>
     </div>
